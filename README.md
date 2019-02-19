@@ -26,4 +26,4 @@ We test LSTM-MA and BiLSTM-MA with pixel-wise and superpixel-wise constraint on 
 
 <img src="figs/fig2.png" width="700"/>
 
-
+For more information, please contact [kxie.cs@gmail.com](mailto:kxie.cs@gmail.com)
