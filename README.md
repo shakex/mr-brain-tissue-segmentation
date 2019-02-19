@@ -23,6 +23,7 @@ Segmentation results for WM (white), GM (yellow), and CSF (red) in three orthogo
 
 ## Images with Noise
 We test LSTM-MA and BiLSTM-MA with pixel-wise and superpixel-wise constraint on different levels of noise in comparison with other five segmentation methods, i.e., k-means, FCM, SVM, KNN, Decision Tree. BrainWeb provides image noise with Rayleigh noise. MRBrainS provides image noise with Gaussian noise.
-<img src="figs/fig2.png" width="500"/>
+
+<img src="figs/fig2.png" width="700"/>
 
 
