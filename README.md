@@ -1,4 +1,4 @@
-# MR-Brain-Tissue-Segmentation
+# MR Brain Tissue Segmentation
 
 MR brain tissue segmentation is a significant problem in biomedical image processing. The goal is to segment images into three tissues, namely white matter (WM), gray matter (GM), and cerebrospinal fluid (CSF). We use a LSTM method with multi-modality and adjacency constraint for brain image segmentation. We generate feature sequences from brain images and feed them into a trained LSTM/BiLSTM model to obtain semantic labels. This method achieves promising segmentation results as well as robustness to noise. 
 
