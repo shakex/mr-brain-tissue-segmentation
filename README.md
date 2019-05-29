@@ -3,7 +3,7 @@
 MR brain tissue segmentation is a significant problem in biomedical image processing. The goal is to segment images into three tissues, namely white matter (WM), gray matter (GM), and cerebrospinal fluid (CSF). We use a LSTM method with multi-modality and adjacency constraint for brain image segmentation. We generate feature sequences from brain images and feed them into a trained LSTM/BiLSTM model to obtain semantic labels. This method achieves promising segmentation results as well as robustness to noise. 
 
 ## Paper
-Kai Xie, Ying Wen. LSTM-MA: A LSTM Method with Multi-modality and Adjacency Constraint for Brain Image Segmentation. (Submitted to ICIP 2019)
+Kai Xie, Ying Wen. LSTM-MA: A LSTM Method with Multi-modality and Adjacency Constraint for Brain Image Segmentation. (ICIP 2019)
 
 ## Code
 Matlab code for implemention of our method: LSTM-MA and BiLSTM-MA. 
