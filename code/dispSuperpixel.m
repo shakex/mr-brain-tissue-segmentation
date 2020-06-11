@@ -4,7 +4,7 @@ function outputImage = dispSuperpixel(img, L, N, is_meanRegion, scale)
 boundaryMsk = boundarymask(imresize(L, scale,'nearest'));
 img_scale = imresize(img, scale,'nearest');
 figure; imshow(imoverlay(img_scale, boundaryMsk, 'm'), 'InitialMagnification', 100);
-% imwrite(imoverlay(img_scale, boundaryMsk, 'm'),'C:\Users\shake\Desktop\MRBrainSeg\figs\superpixel_pd_c079_slic_bilstm_2000_10_f6.bmp');
+imwrite(imoverlay(img_scale, boundaryMsk, 'm'),'/csuperpixel_c079.bmp');
 
 if is_meanRegion
     outputImage = zeros(size(img),'like',img);
@@ -13,7 +13,7 @@ if is_meanRegion
         labelIdx = idx{labelVal};
         outputImage(labelIdx) = mean(img(labelIdx));
     end
-%     figure; imshow(outputImage,'InitialMagnification',scale * 100)
+    figure; imshow(outputImage,'InitialMagnification',scale * 100)
 end  
     
 end

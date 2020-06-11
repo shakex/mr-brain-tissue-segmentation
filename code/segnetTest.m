@@ -5,7 +5,7 @@ imagename = test1_Info.Filename(end-7:end-4);
 imagename2 = test1_Info.Filename(end-7:end);
 
 
-test1_t1 = imread(fullfile('C:\Users\shake\Desktop\MRBrainSeg\dataset\brainweb\resize\t1',imagename2));
+test1_t1 = imread(fullfile('/Users/shake/Documents/master/project/MRBrainSeg/dataset/brainweb/resize/t1',imagename2));
 predlbl = semanticseg(test1_t1, net);
 predlbl = resize2orginal(predlbl, test1_t1_org);
 

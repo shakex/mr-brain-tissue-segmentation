@@ -18,6 +18,4 @@ imshow(imoverlay(img2, boundaryMsk, 'y'), 'InitialMagnification', 100);
 hold on
 p = plot(H, 'MarkerSize', 5, 'XData', scale * x(snode:enode), 'YData', scale * y(snode:enode));
 
-
-
 end

@@ -11,7 +11,10 @@ end
 img2 = imresize(img, scale, 'nearest');
 boundaryMsk = boundarymask(imresize(L, scale,'nearest'));
 figure;
-imshow(imoverlay(img2, boundaryMsk, 'm'), 'InitialMagnification', 100);
+% imshow(imoverlay(img2, boundaryMsk, 'm'), 'InitialMagnification', 100);
+imshow(img2, 'InitialMagnification', 100);
+
+
 % imwrite(imoverlay(img2, boundaryMsk, 'm'), 'C:\Users\shake\Desktop\MRBrainSeg\figs\superpixelrm_pd_c079_slic_bilstm_2000_10_f6.bmp');
 
 % superpixel graph
@@ -27,10 +30,24 @@ imshow(imoverlay(img2, boundaryMsk, 'm'), 'InitialMagnification', 100);
 hold on
 h = plot(G, 'MarkerSize', 5, 'XData', scale * x, 'YData', scale * y);
 
-G.Nodes.NodeColors = degree(G);
-h.NodeCData = G.Nodes.NodeColors;
-colorbar;
 
+h.NodeColor = 'black';
+h.LineWidth = 8;
+G.Nodes.NodeColors = degree(G);
+h.MarkerSize = G.Nodes.NodeColors*5;
+colorbar off;
+
+
+figure;
+h = plot(G, 'MarkerSize', 5, 'XData', scale * x, 'YData', scale * y);
+
+h.NodeColor = 'black';
+h.LineWidth = 8;
+G.Nodes.NodeColors = degree(G);
+h.MarkerSize = G.Nodes.NodeColors*5;
+colorbar off;
+
+% imwrite(im,'/Users/shake/Documents/master/project/MRBrainSeg/res_ppt/graph.png');
 
 % H = subgraph(G,(1:966));
 % figure;

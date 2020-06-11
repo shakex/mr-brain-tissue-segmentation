@@ -31,15 +31,13 @@ for trainIdx = 1:numTrain
     % display subgraph
 %     dispSubGraph(imt1, L, N, G, 501, 550, 4);
 
-%     tic
+
     trainSeq = createSeq(imt1, imt2, impd, G, L, N, featureMode);   % extract features
-%     toc
+
     gtTrainClass = createLabel(gtTrain, trainIdx, L, N);    % prepare gt
-    
     
     XTrain = [XTrain;trainSeq];
     YTrain = [YTrain;categorical(gtTrainClass)];
-    
 end
 
 %% training configuration
